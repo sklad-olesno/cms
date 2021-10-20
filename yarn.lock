@@ -8528,6 +8528,11 @@
   dependencies:
     "diff-match-patch" "^1.0.5"
 
+"sanity@^2.20.0":
+  "integrity" "sha512-9X1f+WwhRikcu25qbKsGQ83m09vPCtDu9X5K/fjFM9Cd13Kk0DGiuIuGtO3F0+tmsWCvJ/gtZ5DUfCOvU+0fFA=="
+  "resolved" "https://registry.npmjs.org/sanity/-/sanity-2.20.0.tgz"
+  "version" "2.20.0"
+
 "sax@~1.2.4":
   "integrity" "sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw=="
   "resolved" "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz"
