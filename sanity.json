@@ -31,7 +31,7 @@
     },
     {
       "implements": "part:@sanity/base/brand-logo",
-      "path": "components/myLogo.js"
+      "path": "./components/logo.js"
     }
   ]
 }
