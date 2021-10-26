@@ -13,15 +13,6 @@ export default {
       type: 'string',
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'title',
-        maxLength: 96,
-      },
-    },
-    {
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
@@ -33,11 +24,25 @@ export default {
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
+      initialValue: (new Date()).toISOString()
     },
     {
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
+      title: 'Cena luzem',
+      name: 'price_raw',
+      type: 'number'
+    },
+    {
+      title: 'Cena za worek',
+      name: 'price_pack',
+      type: 'number'
+    },
+    {
+      name: "attributes",
+      title: "Cechy",
+      type: "array",
+      of: [
+        { type: "section_offer_attribute" },
+      ]
     },
   ],
 

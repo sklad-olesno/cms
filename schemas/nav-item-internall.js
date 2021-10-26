@@ -14,11 +14,16 @@ export default {
       title: "Tytuł"
     },
     {
+      title: 'Pozycja wyróżniona',
+      name: 'highlight',
+      type: 'boolean'
+    },
+    {
       title: 'Internal Link',
       name: 'internalLinkUrl',
       description: 'Select pages for navigation',
       type: 'reference',
-      to: [{ type: 'homepage' },{ type: 'offer' },{ type: 'page' }], 
+      to: [{ type: 'homepage' },{ type: 'page' }], 
     },
   ],
   preview: {

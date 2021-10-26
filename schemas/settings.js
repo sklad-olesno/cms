@@ -31,11 +31,53 @@ export default {
       to: [{type: 'navigation'}],
     },
     {
-      name: 'socialNav',
-      title: 'Nawigacja w stopce',
+      name: 'footerNav',
+      title: 'Menu w stopce',
       description: 'Wybierz menu do nawigacji w stopce',
       type: 'reference',
       to: [{type: 'navigation'}],
+    },
+    {
+      name: 'socialNav',
+      title: 'Social media w stopce',
+      description: 'Wybierz menu do nawigacji w stopce',
+      type: 'reference',
+      to: [{type: 'navigation'}],
+    },
+    {
+      name: 'telephone',
+      title: 'Telefon kontaktowy',
+      type: 'string',
+    },
+    {
+      name: 'adress',
+      title: 'Adres firmy',
+      type: 'text'
+    },
+    {
+      name: 'work_time',
+      title: 'Godziny otwarcia',
+      type: 'text'
+    },
+    {
+      name: 'footer_title_menu',
+      title: 'Tytuł dla menu w stopce',
+      type: 'string',
+    },
+    {
+      name: 'footer_title_adress',
+      title: 'Tytuł dla adresu w stopce',
+      type: 'string',
+    },
+    {
+      name: 'footer_title_contact',
+      title: 'Tytuł dla kontaktu w stopce',
+      type: 'string',
+    },
+    {
+      name: 'copyright',
+      title: 'Prawa autorskie',
+      type: 'string',
     },
   ],
   preview: {

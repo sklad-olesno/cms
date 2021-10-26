@@ -22,6 +22,7 @@ export default {
       name: 'publishedAt',
       title: 'Opublikowano',
       type: 'datetime',
+      initialValue: (new Date()).toISOString()
     },
     {
       name: 'baner_title',

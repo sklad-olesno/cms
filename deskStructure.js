@@ -13,15 +13,6 @@ export default () =>
             .documentId('settings')
             .title('Ustawienia')
         ),
-        S.listItem()
-        .title('MATI TRANS')
-        .schemaType(S.documentTypeListItems().filter(listItem => ['mati_trans'].includes(listItem.getId()))[0].spec.schemaType)
-        .child(
-          S.document()
-            .schemaType('mati_trans')
-            .documentId('mati_trans')
-            .title('MATI TRANS')
-        ),
       S.listItem()
         .title('Strona główna')
         .schemaType(S.documentTypeListItems().filter(listItem => ['homepage'].includes(listItem.getId()))[0].spec.schemaType)
@@ -31,7 +22,7 @@ export default () =>
             .documentId('homepage')
             .title('Strona główna')
         ),
-      ...S.documentTypeListItems().filter(listItem => !['mati_trans','settings','homepage'].includes(listItem.getId()))
+      ...S.documentTypeListItems().filter(listItem => !['settings','homepage'].includes(listItem.getId()))
     ].sort(function(x, y){
       if (parseInt(x.getSchemaType().order) < parseInt(y.getSchemaType().order)) {
         return -1;

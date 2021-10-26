@@ -16,6 +16,7 @@ export default {
       name: 'publishedAt',
       title: 'Opublikowany',
       type: 'datetime',
+      initialValue: (new Date()).toISOString()
     },
     {
       name: 'slug',
@@ -30,6 +31,20 @@ export default {
       name: 'body',
       title: 'Opis',
       type: 'blockContent',
+    },
+    {
+      name: "sections",
+      title: "Sekcje",
+      type: "array",
+      of: [
+        { type: "section_title_left_description" },
+        { type: "section_title_description_link_center" },
+        { type: "section_title_description_link_image" },
+        { type: "section_title_description_img_center" },
+        { type: "section_offer" },
+        { type: "section_prices" },
+        { type: "section_contact" },
+      ]
     },
     {
       name: 'mainImage',

@@ -14,6 +14,11 @@ export default {
       title: "Tytuł"
     },
     {
+      title: 'Pozycja wyróżniona',
+      name: 'highlight',
+      type: 'boolean'
+    },
+    {
       name: 'externalLinkUrl',
       title: 'Adres',
       description:"Use fully qualified URLS for external link",
